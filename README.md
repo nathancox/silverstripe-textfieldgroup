@@ -32,6 +32,8 @@ Installation Instructions
 Usage Overview
 --------------
 
+The first argument is the field label.  All following arguments should be either instances of FormField or strings to be converted in to LiteralFields.
+
 
 $fields->addFieldToTab('Root.Main', new TextFieldGroup('Map coordinates',
 		$this->getMapLink() . '/',

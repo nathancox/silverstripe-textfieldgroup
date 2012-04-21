@@ -30,7 +30,44 @@ class TextFieldGroup extends FieldGroup {
 		parent::__construct($fields);
 	}
 	
-	function Field() {
+	function FieldHolder($properties = array()) {
+		Requirements::css('textfieldgroup/css/TextFieldGroup.css');
+		
+		return parent::FieldHolder($properties);
+	}
+	
+	
+	/*
+	function FieldX($properties = array()) {
+		
+
+		$obj = ($properties) ? $this->customise($properties) : $this;
+		return 'hello';
+		return $obj->renderWith($this->getTemplates());
+	}
+	
+	public function getTemplates() {
+		$return = parent::getTemplates();
+		
+		info($return);
+		
+		return $return;
+	}
+	
+
+	
+	public function getFieldHolderTemplates() {
+		$return = parent::getFieldHolderTemplates();
+		
+		info($return);
+		
+		return $return;
+	}
+	*/
+	
+	
+	/*
+	function Field($properties = array()) {
 		Requirements::css('textfieldgroup/css/TextFieldGroup.css');
 		
 		$fs = $this->FieldList();
@@ -52,5 +89,5 @@ class TextFieldGroup extends FieldGroup {
 		
 		return $content;
 	}
-	
+	*/
 }

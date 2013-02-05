@@ -1,12 +1,18 @@
 .textfieldgroup 
-.textfieldgroup-field {
+.fieldgroup-field {
 	display: block;
 	float: left;
-	padding-right: 4px;
+	padding: 0 6px 0 0;
 	width:auto;
 	font-size:12px;
 	line-height:31px;
 }
+
+	
+	.cms .cms-content-fields .textfieldgroup .fieldholder-small {
+		margin:0;
+	}
+
 
 /*
 	Style placeholders: should be somewhere more generic but it'll do for now

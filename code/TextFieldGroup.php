@@ -4,7 +4,7 @@
  * This is intended to make any combination of text fields and labels on a single line.  Eg for URLSegments prepended by the domain as a label, or for X, Y and Z coordinates for a single location.
  * 
  * The differences from FieldGroup are
- * a) it takes away the minimum width of fields so things are spaced approriately; and
+ * a) it takes away the minimum width of fields so things are spaced appropriately; and
  * b) if you pass in a string instead of a field it's automatically turned in to a LiteralField
  * 
  */
@@ -29,6 +29,10 @@ class TextFieldGroup extends FieldGroup {
 					
 		parent::__construct($fields);
 	}
+
+
+
+
 	
 	function FieldHolder($properties = array()) {
 		Requirements::css('textfieldgroup/css/TextFieldGroup.css');

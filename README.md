@@ -21,7 +21,7 @@ Requirements
 
 Documentation
 -------------
-[GitHub](https://github.com/nathancox/silverstripe-tagitfield)
+[GitHub](https://github.com/nathancox/silverstripe-textfieldgroup/wiki)
 
 Installation Instructions
 -------------------------

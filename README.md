@@ -34,7 +34,7 @@ Usage Overview
 
 The first argument is the field label.  All following arguments should be either instances of FormField or strings to be converted in to LiteralFields.
 
-
+```
 $fields->addFieldToTab('Root.Main', new TextFieldGroup('Map coordinates',
 		$this->getMapLink() . '/',
 		new NumericField("LocationX", "", "", 3),
@@ -47,7 +47,7 @@ $fields->addFieldToTab('Root.Main', new TextFieldGroup('Subdomain',
 		new TextField("Subdomain", ""),
 		'.example.com'
 ));
-
+```
 
 Known Issues
 ------------

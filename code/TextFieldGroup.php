@@ -31,67 +31,13 @@ class TextFieldGroup extends FieldGroup {
 	}
 
 
-
-
-	
+	/**
+	 * Just includes the CSS used for layout
+	 */
 	function FieldHolder($properties = array()) {
-		Requirements::css('textfieldgroup/css/TextFieldGroup.css');
+		Requirements::css(basename(dirname(__DIR__)) . '/css/TextFieldGroup.css');
 		
 		return parent::FieldHolder($properties);
 	}
 	
-	
-	/*
-	function FieldX($properties = array()) {
-		
-
-		$obj = ($properties) ? $this->customise($properties) : $this;
-		return 'hello';
-		return $obj->renderWith($this->getTemplates());
-	}
-	
-	public function getTemplates() {
-		$return = parent::getTemplates();
-		
-		info($return);
-		
-		return $return;
-	}
-	
-
-	
-	public function getFieldHolderTemplates() {
-		$return = parent::getFieldHolderTemplates();
-		
-		info($return);
-		
-		return $return;
-	}
-	*/
-	
-	
-	/*
-	function Field($properties = array()) {
-		Requirements::css('textfieldgroup/css/TextFieldGroup.css');
-		
-		$fs = $this->FieldList();
-    $idAtt = isset($this->id) ? " id=\"{$this->id}\"" : '';
-		$content = "<div class=\"textfieldgroup\"$idAtt>";
-
-		$count = 1;
-		foreach($fs as $subfield) {
-
-			//label the first and last fields of each surrounding div
-			if ($count == 1) $firstLast = "first";
-			elseif ($count == count($fs)) $firstLast = "last";
-			else $firstLast = '';
-
-			$content .= "<div class=\"textfieldgroup-field $firstLast\">" . $subfield->{$this->subfieldParam}() . "</div>";
-			$count++;
-		}
-		$content .= "</div>";
-		
-		return $content;
-	}
-	*/
 }
